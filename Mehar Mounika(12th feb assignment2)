@@ -1,0 +1,37 @@
+moisturizer=85
+bread=425
+boost =104
+yippie=72
+icecream=142
+cname=input('enter customer name: ')
+cnum=input('enter customer phone number: ')
+moisturizerq=int(input('enter no of moisturizer bottles: '))
+breadq=int(input('enter no of bread packet: '))
+boostq=int(input('enter no of boost packet: '))
+yippieq=int(input('enter no of  yippie: '))
+icecreamq=int(input('enter no of icecream: '))
+bill=(moisturizer*moisturizerq)+(bread*breadq)+(boost*boostq)+(yippie*yippieq)+(icecream*icecreamq)
+print('bill:',bill)
+if bill>=5000:
+      dis=bill*10/100
+if bill>=3000:
+     dis=bill*8/100
+elif bill>=3000:
+     dis=bill*5/100
+elif bill>=1000:
+     dis=bill*3/100
+if bill>=3000:tax=bill*10/100
+else:
+     tax=bill*18/100
+mainbill=bill-dis+tax
+OUTPUT:
+print('total bill amount: ', mainbill)
+enter customer name: HAASINI
+enter customer phone number: 9666335466
+enter no of moisturizer bottles: 2
+enter no of bread packet: 1
+enter no of boost packet: 1
+enter no of  yippie: 1
+enter no of icecream: 2
+bill: 1055
+total bill amount:  1213.25
